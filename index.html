@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook Style Post</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #18191a;
+      color: #e4e6eb;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+    .search-bar {
+      background-color: #3a3b3c;
+      border-radius: 20px;
+      padding: 8px 16px;
+      width: 100%;
+      color: #b0b3b8;
+      margin: 10px 0;
+      border: none;
+    }
+    .search-form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .search-form textarea {
+      background-color: #3a3b3c;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      color: #fff;
+      resize: vertical;
+    }
+    .search-form button {
+      background-color: #2374e1;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .stories {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .story {
+      background-color: #3a3b3c;
+      border-radius: 10px;
+      width: 100px;
+      height: 160px;
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 12px;
+      color: white;
+    }
+    .feed {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+    .profile-post {
+      background-color: #242526;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .profile-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .profile-info img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .name {
+      font-weight: bold;
+    }
+    .handle {
+      font-size: 12px;
+      color: #b0b3b8;
+    }
+    .post-content {
+      font-size: 14px;
+      color: #e4e6eb;
+      margin-top: 10px;
+    }
+    .whatsapp-button {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">facebook</div>
+    <div style="display:flex; gap: 10px;">
+      <span>🔔</span>
+      <span>🔍</span>
+    </div>
+  </div>
+
+  <form class="search-form" action="mailto:ntandoblessingtlou@gmail.com" method="POST" enctype="text/plain">
+    <textarea rows="3" placeholder="What's on your mind?" name="message" required></textarea>
+    <button type="submit">Post</button>
+  </form>
+
+  <div class="stories">
+    <div class="story">Create story</div>
+    <div class="story">Your story</div>
+    <div class="story">Ntando Tlou</div>
+    <div class="story">Honey Chibu</div>
+  </div>
+
+  <div class="feed">
+    
+    <!-- Tebogo FX Post -->
+    <div class="profile-post">
+      <div class="profile-info">
+        <img src="https://via.placeholder.com/40" alt="Tebogo FX">
+        <div>
+          <div class="name">Tebogo FX ✅</div>
+          <div class="handle">@TebogoForex</div>
+        </div>
+      </div>
+      <div class="post-content">
+        "Most traders fail not because they lack knowledge, but because they seek validation instead of mastering patience. Focus on your chart, not their opinions."
+      </div>
+      <a class="whatsapp-button" href="https://wa.me/27606090546" target="_blank">💬 Text me on WhatsApp</a>
+    </div>
+
+    <!-- NtandoFX Post -->
+    <div class="profile-post">
+      <div class="profile-info">
+        <img src="https://via.placeholder.com/40" alt="Ntando FX">
+        <div>
+          <div class="name">NtandoFX 📈</div>
+          <div class="handle">@NtandoFX</div>
+        </div>
+      </div>
+      <div class="post-content">
+        Forex tip: "Always wait for confirmation. The market doesn’t reward impatience, it punishes it."
+      </div>
+    </div>
+
+    <!-- NtandoBlessingTlouFX Post -->
+    <div class="profile-post">
+      <div class="profile-info">
+        <img src="https://via.placeholder.com/40" alt="ntandoblessingtloufx">
+        <div>
+          <div class="name">ntandoblessingtloufx 😂</div>
+          <div class="handle">@BlessingFx</div>
+        </div>
+      </div>
+      <div class="post-content">
+        Mareteago 🤣
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
